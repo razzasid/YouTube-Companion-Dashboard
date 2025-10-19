@@ -85,13 +85,13 @@ Update video title and description
 
 ### Comments Management
 
-#### GET `/api/video/:videoId/comments`
+#### GET `/api/comments/:videoId`
 Get all comment threads for a video
 - **Params:** `videoId` (string)
 - **Response:** Array of comment thread objects
 - **Event Log:** `COMMENTS_FETCH`
 
-#### POST `/api/video/:videoId/comments`
+#### POST `/api/comments/:videoId`
 Post a new comment on a video
 - **Params:** `videoId` (string)
 - **Body:** `{ text: string }`
